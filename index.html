@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Are you Brazilian? 🇧🇷 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.icon.ico">
+    <script src="https://kit.fontawesome.com/229fdf10a8.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="firstdiv">
+        <h1>Are you Brazilian? 🇧🇷</h1><br>
+        <p>Insert the country you were born in and discover right now!</p>
+        <p>Type the country you were born: <input type="text" name="pais" id="pais">
+            <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res"></div>
+        <script>
+            function verificar() {
+                var txtpais = document.getElementById('pais')
+                var res = document.querySelector('div#res')
+
+                if (txtpais.value == 'Brasil') {
+                    res.innerHTML += `Congrats! You are Brazilian! I'm so sorry.`
+                } else {
+                    res.innerHTML = `You live in ${txtpais.value}. You are a foreigner. You have no idea how lucky you are.`
+                }
+            }
+        </script>
+    </div>
+    <div class="seconddiv">
+        <h1 class="secondtxt">Follow us</h1>
+        <p class="psecond">Keep up with us on the social medias!</p>
+        <div class="fuckingicons">
+            <a href="https://www.facebook.com/Lula/"><i class="icon fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lulaoficial/?hl=en"><i class="icon fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/LulaOficial"><i class="icon fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/lulaoficial"><i class="icon fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <div class="thirddiv">
+        <img src="http://conteudo.imguol.com.br/c/entretenimento/9d/2020/10/23/ines-brasil-1603486721444_v2_1661x1661.jpg"
+            alt="Inês Brasil" class="imgines">
+    </div>
+
+    <div class="finaline">
+        <p><i><a href="https://lula.com.br/"> Deus, pátria & família.</a></i></p>
+    </div>
+</body>
+
+</html>
